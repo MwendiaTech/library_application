@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+borrowing_one:
+  user: one
+  book: book_one
+  borrowed_at: 2025-02-10 00:33:40
+  due_date: 2025-02-24 00:33:40
+  returned_at:
+
+borrowing_two:
+  user: two
+  book: book_two
+  borrowed_at: 2025-02-10 00:33:40
+  due_date: 2025-02-24 00:33:40
+  returned_at: 2025-02-10 00:33:40
