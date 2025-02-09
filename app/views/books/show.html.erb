@@ -1,0 +1,23 @@
+<h1><%= @book.title %></h1>
+<p><strong>Author:</strong> <%= @book.author %></p>
+<p><strong>ISBN:</strong> <%= @book.isbn %></p>
+<p><strong>Status:</strong>
+  <% if @book.available? %>
+    <span class="badge bg-success">Available</span>
+  <% else %>
+    <span class="badge bg-warning">Borrowed</span>
+  <% end %>
+</p>
+
+<% if user_signed_in? %>
+  <% if @book.available? %>
+    <%= form_with url: book_borrowings_path(@book), method: :post, local: true do %>
+      <%= submit_tag "Borrow this book", class: "btn btn-primary" %>
+    <% end %>
+  <% else %>
+    <p>This book is currently borrowed.</p>
+  <% end %>
+  <%= link_to "Back to Books", books_path, class: "btn btn-secondary mt-2" %>
+<% else %>
+  <p>Please <%= link_to "log in", new_user_session_path %> to borrow books.</p>
+<% end %>
