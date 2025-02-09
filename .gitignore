@@ -52,7 +52,7 @@ bower.json
 
 # Ignore node_modules
 node_modules/
-
+.idea
 # Ignore precompiled javascript packs
 /public/packs
 /public/packs-test
@@ -62,6 +62,7 @@ node_modules/
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+yarn.lock
 
 # Ignore uploaded files in development
 /storage/*
