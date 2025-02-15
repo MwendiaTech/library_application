@@ -85,8 +85,8 @@ sudo npm install --global yarn
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/library_app.git
-   cd library_app
+   git clone https://github.com/MwendiaTech/library_application.git
+   cd library_application
    ```
 
 2. **Install Dependencies:**
